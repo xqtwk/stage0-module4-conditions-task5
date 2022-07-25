@@ -10,8 +10,12 @@ public class SwitchDaysInMonthPrinter {
                 System.out.println("28");
                 break;
             default:
-                System.out.println("30");
-                break;
+                if (month > 12 || month < 1) {
+                    System.out.println("wrong number!");
+                } else {
+                    System.out.println("30");
+                    break;
+                }
         }
     }
 }
